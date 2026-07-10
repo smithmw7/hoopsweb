@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "version": "v1",
+    "description": "Baseline port of Unity ProjectileConfig_Default + prefab physics. All values traced to Unity assets \u2014 see comments in field names. Coordinates: +Y up, player at +Z throwing toward -Z (Unity scene mirrored).",
+    "source": "Assets/_Game/Config/ProjectileConfig_Default.asset, BallPrefab_Base.prefab, HoopTarget.prefab, DynamicsManager.asset",
+    "date": "2026-07-10"
+  },
+  "physics": {
+    "gravityY": -55,
+    "timestep": 0.011111111,
+    "ballRadius": 0.348,
+    "ballMass": 1,
+    "ballRestitution": 0.9,
+    "ballFriction": 0,
+    "ballLinearDamping": 0,
+    "ballAngularDamping": 0.1,
+    "courtFriction": 0.6,
+    "courtRestitution": 0
+  },
+  "scene": {
+    "floor": {
+      "width": 17.7,
+      "zMin": -3,
+      "zMax": 13.8
+    },
+    "walls": {
+      "sideX": 4.5,
+      "backZ": -0.45,
+      "frontZ": 14.2,
+      "ceilingY": 13.5
+    },
+    "floorTileWorldSize": 10.24,
+    "floorTint": "#ffa247",
+    "courtLines": {
+      "centerZ": 4.5,
+      "width": 9.5,
+      "depth": 8.1
+    }
+  },
+  "camera": {
+    "position": {
+      "x": 0,
+      "y": 3,
+      "z": 21
+    },
+    "lookAt": {
+      "x": 0,
+      "y": 3,
+      "z": 0
+    },
+    "fov": 45,
+    "near": 1,
+    "far": 100,
+    "intro": {
+      "from": {
+        "x": 0,
+        "y": 6,
+        "z": 18
+      },
+      "durationSec": 2
+    }
+  },
+  "hoop": {
+    "rimCenter": {
+      "x": 0,
+      "y": 4.07,
+      "z": 7.65
+    },
+    "rimRadius": 0.65,
+    "rimTubeRadius": 0.03,
+    "rimSegments": 12,
+    "rimVisualTubeRadius": 0.045,
+    "guardSlabs": {
+      "enabled": true,
+      "width": 0.19,
+      "height": 0.75,
+      "depth": 0.09
+    },
+    "board": {
+      "center": {
+        "x": 0,
+        "y": 4.53,
+        "z": 6.62
+      },
+      "size": {
+        "x": 1.77,
+        "y": 1.51,
+        "z": 0.12
+      }
+    },
+    "netFunnel": {
+      "segments": 8,
+      "depth": 0.42,
+      "bottomRadius": 0.37,
+      "friction": 0.9,
+      "restitution": 0.05
+    },
+    "sensors": {
+      "topOffsetY": 0.06,
+      "topRadiusScale": 0.8,
+      "bottomOffsetY": -0.46,
+      "bottomRadius": 0.21
+    },
+    "goalHoopVisualScale": 0.62177384
+  },
+  "net": {
+    "strands": 8,
+    "linksPerStrand": 5,
+    "depth": 0.85,
+    "bottomRadius": 0.3,
+    "linkOverlap": 1.35,
+    "damping": 0.985,
+    "iterations": 3
+  },
+  "throw": {
+    "dragPlaneZ": 13,
+    "dragLiftPixels": 50,
+    "chaseDamping": 4,
+    "dragSpinDamping": 6,
+    "grabSettleSeconds": 0.1,
+    "flickDecayTau": 0.08,
+    "flickSampleWindowSec": 0.12,
+    "releaseStaleSeconds": 0.35,
+    "minReleaseSpeedForThrow": 5,
+    "tapBounceUp": 5,
+    "tapForwardSpeed": 15,
+    "dragSpeed": 4,
+    "minThrowSpeed": 8,
+    "maxThrowSpeed": 34,
+    "maxLateralDrift": 7,
+    "arcByDrag": true,
+    "arcByDragLengthMin": 1,
+    "arcByDragLengthMax": 6,
+    "arcByDragMin": 1,
+    "arcByDragMax": 3,
+    "aimAboveRim": 0,
+    "assistX": 1,
+    "assistY": 1,
+    "assistZ": 1,
+    "collisionResumeZ": 10.5
+  },
+  "input": {
+    "desktop": {
+      "maxDragScreens": 0.85,
+      "maxFlickScreensPerSec": 5.5
+    },
+    "mobile": {
+      "maxDragScreens": 0.75,
+      "maxFlickScreensPerSec": 7.0
+    },
+    "minDragScreens": 0.04
+  },
+  "return": {
+    "groundRollWindAccel": 4,
+    "windStopZ": 12.6,
+    "unstickTimeoutSec": 6,
+    "unstickStillSpeed": 0.6,
+    "killY": -15
+  },
+  "balls": {
+    "count": 3,
+    "spawnPoint": {
+      "x": 0,
+      "y": -4.08,
+      "z": 12.77
+    },
+    "spawnMid": {
+      "x": 0,
+      "y": 1.85,
+      "z": 6.99
+    },
+    "spawnEnd": {
+      "x": 0,
+      "y": 0.35,
+      "z": 2.14
+    },
+    "spawnEndXSpread": 0.5,
+    "spawnDelaySec": 0.15
+  },
+  "scoring": {
+    "swishPoints": 3,
+    "rimMakePoints": 2
+  },
+  "rendering": {
+    "reflectionStrength": 0.85,
+    "reflectionBlur": 3,
+    "reflectionDistortion": 0.012,
+    "exposure": 1.15,
+    "envIntensity": 0.55,
+    "keyLightIntensity": 2.6,
+    "shadowRadius": 6
+  }
+}
