@@ -35,7 +35,9 @@
       "centerZ": 4.5,
       "width": 9.5,
       "depth": 8.1
-    }
+    },
+    "floorTiltDeg": 7,
+    "floorPivotZ": 7.65
   },
   "camera": {
     "position": {
@@ -123,7 +125,7 @@
   "throw": {
     "dragPlaneZ": 13,
     "dragLiftPixels": 50,
-    "chaseDamping": 4,
+    "chaseDamping": 14,
     "dragSpinDamping": 6,
     "grabSettleSeconds": 0.1,
     "flickDecayTau": 0.08,
@@ -159,7 +161,7 @@
     "minDragScreens": 0.04
   },
   "return": {
-    "groundRollWindAccel": 4,
+    "groundRollWindAccel": 0,
     "windStopZ": 12.6,
     "unstickTimeoutSec": 6,
     "unstickStillSpeed": 0.6,
