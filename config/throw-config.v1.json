@@ -101,14 +101,22 @@
       "bottomOffsetY": -0.46,
       "bottomRadius": 0.21
     },
-    "goalHoopVisualScale": 0.62177384
+    "goalHoopVisualScale": 0.62177384,
+    "rimSpring": {
+      "enabled": true,
+      "mass": 2.5,
+      "stiffness": 220,
+      "damping": 12,
+      "maxTiltDeg": 16,
+      "anchorOffsetZ": -0.62
+    }
   },
   "net": {
-    "strands": 8,
-    "linksPerStrand": 5,
-    "depth": 0.85,
-    "bottomRadius": 0.3,
-    "linkOverlap": 1.35,
+    "strands": 12,
+    "linksPerStrand": 9,
+    "depth": 0.78,
+    "bottomRadius": 0.24,
+    "linkOverlap": 1.5,
     "damping": 0.985,
     "iterations": 3
   },
